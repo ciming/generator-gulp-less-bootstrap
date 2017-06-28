@@ -6,14 +6,17 @@
   "author": {
     "name": "ciming",
     "email": "xuxcf2010@163.com",
-    "url": ""
+    "url": "https://github.com/ciming"
   },
+  "main": "generators/app/index.js",
   "files": [
     "generators"
   ],
   "main": "generators/index.js",
   "keywords": [
-    "",
+    "less",
+    "bootstrap",
+    "gulp",
     "yeoman-generator"
   ],
   "devDependencies": {
