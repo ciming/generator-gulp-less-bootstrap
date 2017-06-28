@@ -1,9 +1,9 @@
-# Generator Bootstrap Less 
+# Generator Gulp Less Bootstrap
 
 > A Generator for Yeoman to work with the Less version of Bootstrap
 It takes advantage of the gulp build tool for dependency management.
 
-## GENERATED DIRECTORY STRUCTURE
+## Generator Directory  structure
 ```
 ├── app
 │   ├── bootstrap
