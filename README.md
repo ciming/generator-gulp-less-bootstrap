@@ -4,7 +4,7 @@
 It takes advantage of the gulp build tool for dependency management.
 
 ## GENERATED DIRECTORY STRUCTURE
-
+```
 ├── app
 │   ├── bootstrap
 │   │   ├── js file
@@ -30,7 +30,7 @@ It takes advantage of the gulp build tool for dependency management.
     ├── script.js
     ├── server.js
     └── styles.js
-
+```
 ## Getting started
 - Make sure you have [yo](https://github.com/yeoman/yo) installed:
     `npm install -g yo`
