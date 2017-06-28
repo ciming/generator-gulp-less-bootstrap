@@ -3,7 +3,7 @@
 > A Generator for Yeoman to work with the Less version of Bootstrap
 It takes advantage of the gulp build tool for dependency management.
 
-## Generator Directory  structure
+## Generator Directory  Structure
 ```
 ├── app
 │   ├── bootstrap
@@ -31,14 +31,14 @@ It takes advantage of the gulp build tool for dependency management.
     ├── server.js
     └── styles.js
 ```
-## Getting started
+## Getting Started
 - Make sure you have [yo](https://github.com/yeoman/yo) installed:
     `npm install -g yo`
 - Install the generator: `npm install generator-gulp-less-bootstrap`
 - Run: `yo gulp-less-bootstrap` to scaffold your project
 - Run `npm build` for building and `npm server` for preview
 
-#### Previous release:
+#### Previous Release:
 This version includes Bootstrap 3
 
 
