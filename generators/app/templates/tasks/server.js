@@ -1,14 +1,17 @@
 import gulp from 'gulp'
-var gls = require('gulp-live-server');
+import opn from 'opn'
+import args from './lib/args'
+import gls from 'gulp-live-server';
 
 gulp.task('server', ['build', 'serve', 'watch']);
 
 gulp.task('serve', function () {
-  var server = gls.static('/dist', 8888);
+  var server = gls.static('/dist', Number(args.port));
   server.start();
   gulp.watch(['dist/*'], function (file) {
     server.notify.apply(server, [file]);
   });
+  opn('http://localhost:'+ args.port);
 });
 
 gulp.task('watch', function () {

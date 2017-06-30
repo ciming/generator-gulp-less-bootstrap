@@ -1,12 +1,12 @@
 {
   "name": "<%= name %>",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "<%= description %>",
   "scripts": {
-    "start": "gulp server --watch",
+    "start": "gulp server --watch --port 35728",
     "build": "gulp build --production",
-    "dev": "gulp server --watch"
+    "dev": "gulp server --watch --port 35728"
   },
   "author": "",
   "license": "ISC",
@@ -29,6 +29,7 @@
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "less": "^2.7.2",
+    "opn": "^5.1.0",
     "require-dir": "^0.3.2",
     "yargs": "^8.0.2"
   },
