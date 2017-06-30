@@ -3,7 +3,7 @@ const path = require('path');
 const Generator = require('yeoman-generator');
 const chalk = require('chalk');
 const yosay = require('yosay');
-const slug = require('slug')
+const _s = require('underscore.string');
 
 module.exports = class extends Generator {
   constructor (...args) {
@@ -69,7 +69,7 @@ module.exports = class extends Generator {
     this.fs.copyTpl(
       this.templatePath('_package.json'),
       this.destinationPath('package.json'), {
-        name: slug(this.appname),
+        name: _s.slugify(this.appname),
         description: this.description
       }
     )
