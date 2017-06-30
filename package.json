@@ -50,6 +50,9 @@
       "node": true
     }
   },
-  "repository": "ciming/generator-gulp-less-bootstrap",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ciming/generator-gulp-less-bootstrap"
+  },
   "license": "MIT"
 }
