@@ -17,7 +17,7 @@ const args = yargs
     describe: 'Force the creation of sourcemaps'
   })
   .option('port', {
-    default: '35728',
+    default: '8080',
     describe: 'The Server Prot'
   })
   .argv

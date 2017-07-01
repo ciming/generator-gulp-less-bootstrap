@@ -3,6 +3,7 @@ import concat from 'gulp-concat'
 import sourcemaps from 'gulp-sourcemaps';
 import gulpif from 'gulp-if';
 import args from './lib/args';
+import connect from 'gulp-connect';
 import uglify from 'gulp-uglify';
 
 gulp.task('script:bootstrap', function() {
@@ -24,6 +25,7 @@ gulp.task('script:bootstrap', function() {
     .pipe(gulpif(args.production, uglify()))
     .pipe(gulpif(args.sourcemaps, sourcemaps.write()))
     .pipe(gulp.dest(`dist/script/`))
+    .pipe(gulpif(args.watch, connect.reload()));
 
 })
 
@@ -38,6 +40,7 @@ gulp.task('script:js', function() {
     .pipe(gulpif(args.production, uglify()))
     .pipe(gulpif(args.sourcemaps, sourcemaps.write()))
     .pipe(gulp.dest(`dist/script/`))
+    .pipe(gulpif(args.watch, connect.reload()));
 })
 
 gulp.task('script', [

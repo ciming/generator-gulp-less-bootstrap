@@ -5,6 +5,7 @@ import sourcemaps from 'gulp-sourcemaps';
 import gulpif from 'gulp-if';
 import cleanCSS from 'gulp-clean-css';
 import args from './lib/args';
+import connect from 'gulp-connect';
 
 
 gulp.task('styles:bootstrap', function() {
@@ -14,6 +15,7 @@ gulp.task('styles:bootstrap', function() {
         .pipe(gulpif(args.production, cleanCSS()))
         .pipe(gulpif(args.sourcemaps, sourcemaps.write()))
         .pipe(gulp.dest(`dist/styles/`))
+        .pipe(gulpif(args.watch, connect.reload()));
 })
 
 gulp.task('styles:less',function() {
@@ -23,6 +25,7 @@ gulp.task('styles:less',function() {
       .pipe(gulpif(args.production, cleanCSS()))
       .pipe(gulpif(args.sourcemaps, sourcemaps.write()))
       .pipe(gulp.dest('dist/styles'))
+      .pipe(gulpif(args.watch, connect.reload()));
 })
 
 gulp.task('styles', [

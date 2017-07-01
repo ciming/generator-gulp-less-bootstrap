@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "description": "<%= description %>",
   "scripts": {
-    "start": "gulp server --watch --port 35728",
+    "start": "gulp server --watch --port 8080",
     "build": "gulp build --production",
-    "dev": "gulp server --watch --port 35728"
+    "dev": "gulp server --watch --port 8080"
   },
   "author": "",
   "license": "ISC",
@@ -18,12 +18,11 @@
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.4.2",
     "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
     "gulp-html-minifier": "^0.1.8",
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^3.3.0",
     "gulp-less": "^3.3.2",
-    "gulp-live-server": "^0.0.30",
-    "gulp-livereload": "^3.8.1",
     "gulp-sequence": "^0.4.6",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^3.0.0",
