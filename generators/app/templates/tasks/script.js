@@ -24,7 +24,7 @@ gulp.task('script:bootstrap', function() {
     .pipe(concat('bootstrap.js'))
     .pipe(gulpif(args.production, uglify()))
     .pipe(gulpif(args.sourcemaps, sourcemaps.write()))
-    .pipe(gulp.dest(`dist/script/`))
+    .pipe(gulp.dest(`dist/script/vendor`))
     .pipe(gulpif(args.watch, connect.reload()));
 
 })
