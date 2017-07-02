@@ -13,10 +13,10 @@ gulp.task('watch', function () {
     livereload: true
   });
   // Start livereload server
-  gulp.watch('app/styles/*.less', ['styles:less']);
+  gulp.watch('app/styles/**/*.less', ['styles:less']);
   gulp.watch('app/bootstrap/less/*.less', ['styles:bootstrap']);
-  gulp.watch('app/script/**/*.less', ['styles:js']);
-  gulp.watch('app/bootstrap/script/*.js', ['styles:bootstrap']);
+  gulp.watch('app/script/**/*.js', ['script:js']);
+  gulp.watch('app/bootstrap/script/*.js', ['script:bootstrap']);
   gulp.watch('app/*.html', ['html']);
   gulp.watch('app/fonts/**/*.{woff,woff2,ttf,eot,svg}', ['fonts']);
   gulp.watch('app/images/**/*', ['images']);
